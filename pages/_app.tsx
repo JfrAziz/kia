@@ -10,6 +10,8 @@ export default function App(props: AppProps) {
       <Head>
         <title>KIA | Peduli Lindungi</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#fff" />
       </Head>
 
       <MantineProvider
