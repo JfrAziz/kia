@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { AppProps } from 'next/app';
-import { MantineProvider } from '@mantine/core';
+import { Container, MantineProvider } from '@mantine/core';
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props;
@@ -18,10 +18,12 @@ export default function App(props: AppProps) {
         withGlobalStyles
         withNormalizeCSS
         theme={{
-          colorScheme: 'dark',
+          colorScheme: 'light',
         }}
       >
-        <Component {...pageProps} />
+        <Container size={540}>
+          <Component {...pageProps} />
+        </Container>
       </MantineProvider>
     </>
   );
